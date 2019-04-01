@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import Grid from './components/grid/Grid';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className='App'>
+        <div className='Body'>
+          <div className='grid'>
+            <div className='gridItem' id='item_1'><p className='text'>1</p></div>
+            <div className='gridItem' id='item_2'><p className='text'>2</p></div>
+            <div className='gridItem Grid' id='item_3'>
+              <div className='gridItem' id='item_4'><p className='text'>4</p></div>
+              <div className='gridItem' id='item_5'><p className='text'>5</p></div>
+              <div className='gridItem' id='item_6'><p className='text'>6</p></div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

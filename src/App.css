@@ -1,33 +1,78 @@
 .App {
-  text-align: center;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Body {
+  margin: 4px;
+  background-color: #282b33;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text {
+  margin: auto;
   color: white;
+  font-size: 1.5em;
+}
+.grid {
+  width: calc(100% - 48px );
+  height: calc(100vh -  48px - 32px);
+  display: grid;
+  grid-template-columns: repeat(12, minmax(20px,1fr));
+  grid-auto-rows: 50px auto;
+  padding: 8px;
+  margin: 8px;
+  gap: 16px;
+}
+.gridItem {
+  display: inline-flex;
+  flex: 1 1 auto;
 }
 
-.App-link {
-  color: #61dafb;
+#item_1 {
+  background-color: rgba(107, 242, 150, .5);
+  border: 3px solid rgb(107, 242, 150);
+  grid-column: span 12;
+  grid-row: span 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#item_2 {
+  background-color: rgba(231, 107, 242, .5);
+  border: 3px solid rgb(231, 107, 242);
+  grid-column: span 2;
+  grid-row: span 10;
 }
+
+#item_3 {
+  background-color: rgba(107, 190, 242, .5);
+  border: 3px solid rgb(107, 190, 242);
+  grid-column: span 10;
+  grid-row: span 10;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(20px,1fr));
+  grid-auto-rows: 50px auto;
+  gap: 16px;
+}
+
+#item_4 {
+  background-color: rgba(242, 192, 107, 0.5);
+  border: 3px solid rgb(242, 192, 107);
+  grid-column: span 10;
+  grid-row: span 3;
+}
+
+#item_5 {
+  background-color: rgba(242, 237, 107, 0.5);
+  border: 3px solid rgb(242, 237, 107);
+  grid-column: span 10;
+  grid-row: span 3;
+}
+
+#item_6 {
+  background-color: rgba(107, 242, 240, 0.5);
+  border: 3px solid rgb(107, 242, 240);
+  grid-column: span 10;
+  grid-row: span 3;
+}
+
+
