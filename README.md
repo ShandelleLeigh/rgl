@@ -3,7 +3,11 @@
 Purpose is to be able to get components to rearrange and resize
 without undesired side effects within a minimal app setup.
 
-## -----
+##
+
+Uses react-resizable library: https://github.com/STRML/react-resizable
+
+##
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
